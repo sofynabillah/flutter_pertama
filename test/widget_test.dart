@@ -1,15 +1,3 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
-import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
-
-import 'package:flutter_pertama/main.dart';
-
 void main() {
   //tipe data dan variabel
 
@@ -80,7 +68,6 @@ void main() {
   print(a <= b);
 
   // conditional
-  print('CONDITIONAL');
   var nilai;
   nilai = 90;
 
@@ -97,13 +84,70 @@ void main() {
   nilai >= 60 ? print('Lulus') : print('Tidak Lulus');
 
   //Function
-  print('FUNCTION');
 
   hitungNilai();
   hitungNilai1(75, 90);
   hitungNilai2(mapel1: 70, mapel2: 80);
   hitungNilai3(75, 75, 100);
   hitungNilai4(75, 100);
+
+  //Const Final
+  //Const
+  const String mahasiswafk = "Sofy Nabillah";
+
+  print(mahasiswafk);
+
+  //Final
+  final String mahasiswafk1;
+
+  mahasiswafk1 = "Sofy Nabillah";
+
+  print(mahasiswafk1);
+
+  //Null Safety
+  // ? ! Late
+  // ? Digunakan pada kondisi boleh null
+  // ! Memaksa untuk dijalankan/yakin ada datanya
+  // Late Untuk diisi nanti
+  String? jurusan1;
+
+  jurusan1 = "Sistem Informasi";
+
+  print(jurusan1.length);
+
+  late String prodi;
+
+  prodi = "SI";
+
+  print(prodi.length);
+
+  //Perulangan Looping
+  print('PERULANGAN LOOPING');
+  //For +
+  for (int no = 1; no <= 5; no++) {
+    print(no);
+  }
+
+  //For -
+  for (int no = 5; no >= 1; no--) {
+    print(no);
+  }
+
+  //While
+  int no1 = 1;
+  int no2 = 2;
+  while (no1 <= no2) {
+    print(no1);
+    no1++;
+  }
+
+  //Do While
+  int no3 = 1;
+  int no4 = 5;
+  do {
+    print(no3);
+    no3++;
+  } while (no3 <= no4);
 }
 
 //function
